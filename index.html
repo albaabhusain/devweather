@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wOw weather</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
     
 </head>
 <body>
@@ -19,14 +21,15 @@
         
 
 
-        <div class="search-box">
-            <form action="" class="city-search">
+        <div class="search-box" >
+            <form action="" class="city-search"id="form1">
                 <label class="f-2em" for="city">Enter a city name</label>
-                <input type="text" name="city">
+                <div class="ser"><input type="text" name="city"> <button type="submit" form="form1" value="Submit"><i class="fas fa-search"></i></button></div>
+                
             </form>
         </div>
 
-<div class="det d-none" id="content">
+<div class="det d-none" >
         <div class="disp-img ">
             <img src="https://via.placeholder.com/400x300" class="time">
             <div class="icon">
@@ -35,7 +38,7 @@
         </div>
 
 
-        <div class="info ">
+        <div class="info "id="content">
             <h1 class="city-head my-4 ">City</h1>
             <div class="my-4 f-2em">Weather condtion</div>
             <div class="temp-info my-4">

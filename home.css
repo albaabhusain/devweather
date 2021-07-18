@@ -39,6 +39,19 @@ form{
     flex-direction: column;
     margin: 10px 0px;
     text-align: center;
+    
+}
+.ser{
+    display: flex;
+   align-items: flex-end;
+    
+}
+.ser input{
+    flex: 6;
+}
+.ser button{
+    flex: 1;
+    height:50px ;
 }
 .search-box input{
     margin-top: 12px;

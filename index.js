@@ -9,6 +9,12 @@ const icon = document.querySelector('.icon img');
 
 const updateUI = (data)=>{
 
+    //visible data
+
+    det.classList.remove('d-none');
+    
+    // ui
+
    const city = data.details;
   const  weather=data.weather;
   
@@ -74,9 +80,7 @@ cityForm.addEventListener('submit', e =>{
     .then(data=> updateUI(data))
     .catch(err => console.log(err));
 
-    //visible data
-
-    det.classList.remove('d-none');
+    
     
 
 
