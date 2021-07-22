@@ -4,6 +4,7 @@ const bimg= document.querySelector('.disp-img') ;
 const det = document.querySelector('.det')
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img');
+const main = document.querySelector('main');
 
 //update ui
 
@@ -17,6 +18,15 @@ const updateUI = (data)=>{
 
    const city = data.details;
   const  weather=data.weather;
+
+  if(weather.IsDayTime){
+      main.classList.remove('night-theme');
+      main.classList.add('day-theme');
+  }
+  else{
+      main.classList.remove('day-theme');
+      main.classList.add('night-theme');
+  }
   
 
     cityInfo.innerHTML=`
@@ -29,6 +39,8 @@ const updateUI = (data)=>{
              </div>
              <div class="my-4 f-2em">${weather.WeatherText}</div>
     `
+
+    
     let isrc=null;
     if(weather.IsDayTime){
         isrc='img/day.svg'
@@ -36,6 +48,7 @@ const updateUI = (data)=>{
     }
     else
     isrc='img/night.svg';
+
 
     time.setAttribute('src',isrc);
 

@@ -7,7 +7,57 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    color: rgba(219, 219, 219, 0.795);
 }
+
+/* themes */
+main{
+    width: 100%;
+    height: 1080px;
+}
+
+.day-theme{
+    background: linear-gradient(to right top, rgba(228, 95, 0, 0.938) , rgba(216, 188, 46, 0.904) );
+}
+
+.night-theme{
+    background: linear-gradient(to right top , #7B4397 , rgba(3, 5, 53, 0.9));
+    
+}
+.glass{
+    background: white;
+    background: linear-gradient(to right bottom , rgba(255,255,255,0.3),rgba(255,255,255,0.1));
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+.circle1 ,.circle2 ,.circle3{
+    background: white;
+    background: linear-gradient(to right bottom , rgba(255,255,255,0.9),rgba(255,255,255,0.7));
+    
+    border-radius: 50px;
+    position: absolute;
+
+}
+.circle1{
+    height: 90px ;
+    width: 90px;
+    width: 90px;
+    top: 688px;
+}
+.circle2{
+    height: 50px ;
+    width: 50px;
+    top: 782px;
+    right: 10px;
+}
+.circle3{
+    height: 70px ;
+    width: 70px;
+    top: 532px;
+    right: 1px;
+
+}
+/* bodyy... */
 
 body{
     background: rgba(230, 230, 230, 0.575);
@@ -26,13 +76,14 @@ body{
     
    
 }
-.heading{
+.wow{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: tomato;
     height: 60px;
-    color: white;
+    border-radius: 0 0 20px 20px;
+    
+   
 }
 form{
     display: flex;
@@ -44,19 +95,35 @@ form{
 .ser{
     display: flex;
    align-items: flex-end;
+    margin: 10px 0 20px 0;
+    justify-content: space-between;
     
 }
 .ser input{
-    flex: 6;
+    flex: 4.9;
+    cursor: pointer;
 }
 .ser button{
     flex: 1;
-    height:50px ;
+    height: 50px ;
+    width: 46px;
+    border:none;
+    border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
+
+}
+.ser input:focus{
+    background: linear-gradient(to right bottom , rgba(255,255,255,0.3),rgba(255,255,255,0.1))
+    
 }
 .search-box input{
     margin-top: 12px;
     height: 50px;
     padding: 0 20px;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    border: none;
+
 
 }
 .info h1{
@@ -75,6 +142,7 @@ form{
 .time{
     width: 400px;
     height: 400px;
+    border-radius: 20px;
 }
 .icon{
     position: relative;
@@ -83,16 +151,17 @@ form{
     width: 100px;
     margin-bottom: -50px;
     background: white; 
-    border: 1px solid rgba(160, 160, 160, 0.582);
+    
 }
 
 .info h1,h2{
     display: inline;
 }
 .det{
-    background: white;
+    
     margin-bottom: 20px;
     height: auto;
+    border-radius: 20px;
 }
 .info{
     display: flex;
@@ -113,17 +182,43 @@ form{
 
 }
 
+/* mobile device */
+
 @media screen and (max-width: 600px){
 
+    /* theme */
+
+    .circle1{
+        height: 90px ;
+        width: 90px;
+        width: 90px;
+        top: 688px;
+    }
+    .circle2{
+        height: 50px ;
+        width: 50px;
+        top: 782px;
+        right: 10px;
+    }
+    .circle3{
+        height: 70px ;
+        width: 70px;
+        top: 532px;
+        right: 1px;
+    
+    }
+
+    /* main */
+
     .container{
-        width: 95%;
+        width: 300px;
         
         margin: auto;
     }
     .time{
-     width: 100%;
+     width: 300px;
      height: 300px;
-     margin-top: 10px ;
+        
     
     
     }
@@ -134,5 +229,6 @@ form{
         height: 600px;
     }
 }
+
 
 

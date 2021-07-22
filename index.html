@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wOw weather</title>
+    <title>.dev Weather</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
     
 </head>
 <body>
+<main class="night-theme">
+  
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
 
-<div class="wow">
+
+<div class="wow glass">
             <h1 class="heading ">.dev Weather</h1>
           </div>
-<div class="container">
+<div class="container ">
     
-    <div class="main-body">
+    <div class="main-body ">
+
+
         
 
 
         <div class="search-box" >
             <form action="" class="city-search"id="form1">
                 <label class="f-2em" for="city">Enter a city name</label>
-                <div class="ser"><input type="text" name="city"> <button type="submit" form="form1" value="Submit"><i class="fas fa-search"></i></button></div>
+                <div class="ser"><input type="text" name="city" class="glass"> <button type="submit" form="form1" value="Submit" class="glass"><i class="fas fa-search"></i></button></div>
                 
             </form>
         </div>
 
-<div class="det d-none" >
+<div class="det d-none glass"id="content" >
         <div class="disp-img ">
             <img src="https://via.placeholder.com/400x300" class="time">
             <div class="icon">
@@ -38,7 +46,7 @@
         </div>
 
 
-        <div class="info "id="content">
+        <div class="info ">
             <h1 class="city-head my-4 ">City</h1>
             <div class="my-4 f-2em">Weather condtion</div>
             <div class="temp-info my-4">
@@ -55,7 +63,7 @@
 </div>
 
 
-
+</main>
     
 </body>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
