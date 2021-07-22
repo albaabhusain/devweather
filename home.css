@@ -39,22 +39,23 @@ main{
 
 }
 .circle1{
-    height: 90px ;
-    width: 90px;
-    width: 90px;
-    top: 688px;
+    height: 100px ;
+    width: 100px;
+    top: 833px;
+    left: 30vw;
+
 }
 .circle2{
     height: 50px ;
     width: 50px;
-    top: 782px;
-    right: 10px;
+    top: 886px;
+    right: 33vw;
 }
 .circle3{
-    height: 70px ;
-    width: 70px;
-    top: 532px;
-    right: 1px;
+    height: 90px;
+    width: 90px;
+    top: 625px;
+    left: 60vw;
 
 }
 /* bodyy... */
