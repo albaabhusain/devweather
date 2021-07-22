@@ -91,7 +91,11 @@ cityForm.addEventListener('submit', e =>{
 
     updateCity(city)
     .then(data=> updateUI(data))
-    .catch(err => console.log(err));
+    .catch(err => {
+        console.log(err);
+        alert('Not in Database , Try different search')
+    
+    });
 
     
     
